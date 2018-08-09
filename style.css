@@ -41,10 +41,10 @@ body {
   text-align: center;
   align-items: center;
 }
-#description{
+/*#description{
   color: black;
   font-size: 18px;
-}
+} */
 #text {
   color: white;
 }
@@ -52,7 +52,7 @@ body {
     display: inline-block;
     text-align: center;
     width: 48%;
-    vertical-align: center;
+    vertical-align: middle;
 }
 .checkbox {
     position: relative;
@@ -93,13 +93,12 @@ body {
     margin-top: 10px;
 }
 #submit {
-    background-color: white;
+    background-color: blue;
     border-radius: 4px;
     color: white;
     text-align: center;
     font-size: 1em;
-    height: 40px;
-    width: 400px;
     margin: 5px;
     border: 0px solid;
 }
+
