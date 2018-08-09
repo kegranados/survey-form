@@ -14,12 +14,23 @@
 </head>
 <body>
 <h1 id="title" > Survey Form </h1>
-<div id="form-outer">
+  <form id="survey-form">
+<label id="form-outer">
   <p id="description">Let us know how we can improve freeCodeCamp</p> <br>
-<div>*Name: <input type="text" placeholder="Enter your Name" required></div><br>
-<div>*Email: <input type="text" placeholder="Enter your Email" required></div><br>
-<div>*Age: <input type="number" placeholder="Enter your Age" required></div><br>
-</div>
+  
+  <div class="labels">
+   
+<label id="name-label" for="name">*Name:
+<input autofocus id="name" name="name" type="text"  placeholder="Enter your Name" required ></label><br>
+  
+<label id="email-label" for="email">*Email:
+<input name="email" id="email" type="email" placeholder="Enter your Email" required></label><br>
+  
+<label id="number-label" for="number">*Age:
+<input name="number" id="number" type="number" placeholder="Enter your Age" min="0" max="200" required></label><br>
+
+  </div>
+    
 <div class="rightTab">
   <label id="text" for="currentPos">Which option best describes your current role?</label>
   <select id="dropdown" name="currentPos" class="dropdown">
@@ -32,9 +43,9 @@
 </div>
 <div id="thing">
   <label id="text" for="currentPos">How likely is that you would recommend freeCodeCamp to a friend?</label><br>
-  <label for="thing"><input id="thing" type="radio" name="choices"> Definitely</label><br>
-  <label for="thing"><input id="thing" type="radio" name="choices"> Maybe</label><br>
-  <label for="thing"><input id="thing" type="radio" name="choices"> Not Sure</label><br>
+  <label for="thing"><input id="thing" type="radio" name="choices" value="choices"> Definitely</label><br>
+  <label for="thing"><input id="thing" type="radio" name="choices" value="choices"> Maybe</label><br>
+  <label for="thing"><input id="thing" type="radio" name="choices" value="choices"> Not Sure</label><br>
 </div>
 <div class="rightTab">
   <label id="text" for="mostlike">What do you like most in FCC:</label>
@@ -67,9 +78,11 @@
   </div>
 </div>
 <div>
-  <p id="description">Additional Comments:<input id="submit" type="text" rows="4" cols="30" placeholder="Enter your comment here"></p><br>
+  <label id="comment">Additional Comments:
+    <textarea for="comment" placeholder="Enter your comment here"></textarea></label><br>
 </div>
-<button type="submit"> Submit </button><br><br>
+<input type="submit" id="submit" value="Sign Me Up!"></input>
+</form>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
